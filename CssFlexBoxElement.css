@@ -1,0 +1,192 @@
+.nav{
+    background-color: #EF471F;
+    display: flex;
+    min-height: 45px;
+    /* Căn nội dung trong flex container
+        center: căn giữa
+        base line: căn trên hàng
+        end: căn về cuối dòng
+        space-between: đẩy 2 list bên trong cách xa nhau ra
+    */
+    justify-content: space-between;
+}
+.nav-item{
+    color: #fff;
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+}
+.nav-list{
+    padding-left: 0;
+    margin: auto 25px;   
+}
+.form-container{
+    max-width: 720px;
+    padding: 32px;
+    margin: 36px auto 0 auto;
+    background-color: #fff;
+}
+.form_row{
+    padding: 8px 0;
+    display: flex;
+}
+.form_label{
+    /* min-width chiều rộng ngắn nhất, nó dùng để
+        đồng bộ chiều rộng giữa các item
+    */
+    min-width: 80px;
+}
+.form_input{
+    flex: 1;
+}
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #ccc;
+}
+.column-layout{
+    display: flex;
+    background-color: #fff;
+    margin: 38px 0 0 0;
+    padding: 12px 0;
+}
+.column-item{
+    padding: 0 16px;
+}
+.sidebar-one{
+    /* Khi thẻ nào có flex = 1 trở lên, nó sẽ chiếm 
+        chọn main axis nhất có thể.
+        trong cùng 1 thẻ div, 
+        nếu phần nào có flex = 1 và các phần khác => chiếm hết khoảng trống các thẻ khác  
+    */
+    flex: 1;
+}
+.sidebar-two{
+    flex: 1;
+}
+.main-column{
+    flex: 3;
+}
+/* .feature-layout{
+    display: flex;
+    margin-top: 36px;
+    /* flex-direction: column; */
+    /* justify-content: space-around;
+}
+@media(min-width: 740px){
+    .feature-layout{
+        flex-direction: ro;
+    }
+}
+.feature-item{
+    padding: 12px, 16px;
+    margin-top: 16px;
+    flex-basis: 30%;
+}
+.feature-item:nth-child(1){
+    background-color: #C0E3DE;
+}
+.feature-item:nth-child(2){
+    background-color: #E3C8C0;
+}
+.feature-item:nth-child(3){
+    background-color: #E2C0E3;
+} */ 
+.feature-layout {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* PC, Tablet */
+@media (min-width: 740px) {
+    .feature-layout {
+        flex-direction: row;
+    }
+}
+
+.feature-item {
+    padding: 12px 16px;
+    margin-top: 16px;
+    flex-basis: 30%;
+}
+
+.feature-item:nth-child(1) {
+    background-color: rgb(192, 227, 222);
+}
+
+.feature-item:nth-child(2) {
+    background-color: rgb(227, 200, 192);
+}
+
+.feature-item:nth-child(3) {
+    background-color: rgb(226, 192, 227);
+}
+.wrap-layout{
+    background-color: #fff;
+    display: flex;
+    margin-top: 36px;
+    padding: 12px 0 36px 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.wrap-layout_item{
+    background-color: tomato;
+    width: 148px;
+    height: 90px;
+    color: #fff;
+    text-align: center;
+    line-height: 90px;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.center-layout{
+    background-color: #C0E3C2;
+    margin: 36px auto 0 auto;
+    padding: 32px 0;
+    max-width: 640px;
+    height: 360px;
+    display: flex;
+}
+.center-layout_item{
+    font-size: 42px;
+    font-weight: 700;
+    margin: auto;
+}
+.chart-layout{
+    margin: 36px auto 0 auto;
+    padding: 32px 0;
+    height: 320px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+.chart-layout_item{
+    background-color: tomato;
+    align-self: flex-end;
+    width: 60px;
+    color: #fff;
+    text-align: center;
+    height: var(--percent);
+    background-color: #EF5122;
+    animation: growth ease-in 0.5s;
+}
+@keyframes growth {
+    from {
+        opacity: 0;
+        height: calc(var(--percent) - 50%);
+    }
+    to {
+        opacity: 1;
+        height: var(--percent);
+    }
+}
