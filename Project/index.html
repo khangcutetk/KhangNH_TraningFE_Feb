@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <!-- Ở 1 số trình duyệt, các thuộc tính css được cài đặt mặc định và không có 
+        sự thống nhất. Khi tạo 1 trang web cho nhiều trình duyệt khác nhau, ta cần reset lại thuộc tính css. 
+        Để reset lại thuộc tính css, lên google gõ từ khóa: normalizer css cdn.
+        Click vào web cdnjs.com và lưu url của file có đuôi .min.css hoặc tải source code đó về máy và lưu trong project.
+        File đó sẽ chạy và reset lại mặc định các thuộc tính css.
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/font/css/all.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <!-- Block element Modifier -->
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--separate">
+                            Go to shop in Mobile App
+                            <div class="header__qr">
+                                <img src="assets/img/qrcode.png" alt="" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                   <a href="" class="header__qr-link">
+                                    <img src="assets/img/google_play.png" alt="Google play" class="header_qr-download-img">
+                                   </a>
+                                    <img src="assets/img/app_store.png" alt="App store" class="header_qr-download-img">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--no-pointer">Connect</span>
+                            <a href="" class="header_navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon header_navbar-icon-link">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-item-link" href="">
+                                <i class="header__navbar-icon1 fa-solid fa-bell"></i>
+                                Notification</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            
+                            <a class="header__navbar-item-link" href="">
+                                <i class="header__navbar-icon1 fa-solid fa-circle-info"></i>
+                                Help</a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Register</li>
+                        <li class="header__navbar-item header__navbar-item--strong ">Login</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="container">
+
+        </div>
+        <footer class="footer">
+            
+        </footer>
+    </div>
+</body>
+</html>

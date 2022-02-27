@@ -1,0 +1,48 @@
+.btn{
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 12px 48px;
+    /* bo viền  */
+    border-radius: 45px;
+    /* khi trỏ chuột vào thì biến thành bàn tay */
+    cursor: pointer;
+    /* thay đổi màu khi trỏ chuột vào nút */
+    transition: opacity 0.2s ease;
+}
+.btn + .btn{
+    margin-left: 16px;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body > div{
+    margin: auto;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Helvetica Neue";
+    background-color: #f4f4f5;
+}
+.btn--success{
+    background-color: #71be34;
+}
+.btn--warn{
+    background-color: #ffb702;
+}
+.btn--danger{
+    background-color: #ff623d;
+}
+.btn--disable{
+    opacity: 0.5 !important;
+    cursor: default;
+}

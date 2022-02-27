@@ -1,0 +1,34 @@
+:root{
+    --white-color:white;
+    --black-color: #000;
+    --text-color: #333;
+}
+*{
+    box-sizing: inherit;
+}
+html{
+    /* Trong trình duyệt, font size mặc định là 16px
+        khi khai báo với 100% thì nó mặc định hiểu là 16px.
+        1rem = 100% default font-size.
+    */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    /* sans-serif: chữ không chân */
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+p{
+    font-size: 1.6rem;
+}
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width{
+    width: 100%;
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
